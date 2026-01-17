@@ -5,7 +5,7 @@
 
     <groupId>com.epivitae</groupId>
     <artifactId>MIA-Metadata-Inspection-Analyzer</artifactId>
-    <version>0.1.0</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <name>MIA: Metadata Inspection Analyzer</name>
@@ -53,6 +53,8 @@
     </dependencies>
 
     <build>
+        <finalName>MIA-v${project.version}</finalName>
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -67,5 +69,12 @@
                 </configuration>
             </plugin>
         </plugins>
+        
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
     </build>
 </project>

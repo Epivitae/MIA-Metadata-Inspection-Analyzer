@@ -3,6 +3,8 @@ package com.epivitae.mia;
 import ij.plugin.PlugIn;
 import com.epivitae.mia.gui.InspectorFrame;
 
+import javax.swing.SwingUtilities;
+
 /**
  * Plugin entry point for ImageJ.
  */
@@ -10,9 +12,11 @@ public class MIA_Main implements PlugIn {
 
     @Override
     public void run(String arg) {
-        // Launch the GUI
-        InspectorFrame frame = new InspectorFrame();
-        frame.setVisible(true);
+        // 建议在 EDT 线程中启动 Swing 界面
+        SwingUtilities.invokeLater(() -> {
+            InspectorFrame frame = new InspectorFrame();
+            frame.setVisible(true);
+        });
     }
     
     /**
