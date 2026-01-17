@@ -1,0 +1,29 @@
+{
+  "title": "MIA: Metadata Inspection Analyzer for ImageJ/Fiji (v1.0.0)",
+  "description": "<p><strong>MIA (Microscopy Information Assistant) v1.0.0</strong> is a lightweight, 'idiot-proof' tool designed for biologists to instantly extract hidden metadata from microscopy files without writing code.</p><p>As part of the <strong>Epivitae Biosensor Tools</strong> suite, MIA bridges the gap between complex Bio-Formats data and human-readable reports.</p><p><strong>v1.0.0 Release Highlights:</strong></p><ul><li><strong>🚀 Drag & Drop Experience:</strong> Simply drag any microscopy file (.oir, .czi, .lif, .nd2) into the window to view dimensions, pixel size, and time intervals instantly.</li><li><strong>🌈 Spectrum Mapping:</strong> Automatically visualizes Excitation/Emission wavelengths with color-coded indicators (e.g., <span style=\"color:#00FFFF\">● Ex488</span>), making channel identification intuitive.</li><li><strong>🕵️‍♂️ Hybrid Parsing (Olympus .oir):</strong> Includes a specialized 'Range Hunter' engine to extract proprietary metadata hidden by Olympus, such as exact laser lines, emission filter ranges, and millisecond-precision time intervals.</li><li><strong>📊 One-Click Export:</strong> Exports a professional CSV report compatible with Excel, containing both a formatted summary and the complete raw metadata table (UTF-8 BOM supported).</li></ul><p><strong>Supported Formats:</strong></p><ul><li><strong>Olympus (.oir):</strong> Full Support (Hybrid Raw Parsing)</li><li><strong>Zeiss (.czi), Leica (.lif), Nikon (.nd2):</strong> Standard OME-XML Support</li><li><strong>Generic Formats:</strong> All formats supported by Bio-Formats</li></ul><hr><p><strong>📧 Contact & Support:</strong><br><strong>Kui Wang</strong><br>Email: <a href=\"mailto:k@cns.ac.cn\">k@cns.ac.cn</a><br>Institute: <a href=\"http://www.cns.ac.cn\" target=\"_blank\">Center for Excellence in Brain Science and Intelligence Technology (CEBSIT), CAS</a></p>",
+  "creators": [
+    {
+      "name": "Wang, Kui",
+      "affiliation": "Center for Excellence in Brain Science and Intelligence Technology, Chinese Academy of Sciences",
+      "orcid": "0000-0002-9436-3632"
+    }
+  ],
+  "access_right": "open",
+  "license": {
+    "id": "MIT"
+  },
+  "keywords": [
+    "imagej",
+    "fiji",
+    "imagej-plugin",
+    "bioimage-analysis",
+    "microscopy",
+    "metadata",
+    "bio-formats",
+    "olympus-oir",
+    "czi",
+    "lif",
+    "java"
+  ],
+  "upload_type": "software"
+}
